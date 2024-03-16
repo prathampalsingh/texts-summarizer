@@ -20,10 +20,12 @@ window.title("Summarizer")
 my_menu = Menu(window)
 window.configure(menu = my_menu)
 
+#this command is used to open a new window when you click about me
 def our_command():
   newWindow = Toplevel(window)
   newWindow.title("about me")
   newWindow.geometry("400x400")
+  #change the intro to something else
   label = Label(newWindow, text="hello, my name is prathampal singh \n make sure to follow me on github and linkedin ").pack()
   
   
@@ -35,13 +37,13 @@ def our_command():
    # self.window = Window(top)
     #self.window.pack()
 
+#the about me button 
 file_menu = Menu(my_menu)
 my_menu.add_command(label="About Me", command=our_command)
-#file_menu.add_command(label="new..", command=our_command)
 
+#the exit button on the top right
 exit_menu = Menu(my_menu)
 my_menu.add_command(label="Exit", command=window.quit) #menu=exit_menu
-#exit_menu.add_command(label="Exit", command=window.quit)
 
 # Input label and text field
 input_label = Label(window, text="Enter Text to Summarize:", fg="red")
