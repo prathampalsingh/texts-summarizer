@@ -1,3 +1,5 @@
+#thank you for choosing my code
+
 
 from tkinter import *
 import nltk  # Download required packages before running: nltk.download('punkt')
